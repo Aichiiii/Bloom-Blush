@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom &amp; Blush — Clean, Considered Beauty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#" class="navbar__logo">Bloom &amp; Blush</a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#shop">SHOP</a>
+      <a href="#about">ABOUT</a>
+      <a href="#journal">JOURNAL</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <div class="navbar__icons">
+      <button class="icon-btn" aria-label="Search" id="searchBtn">
+        <span class="icon-search" aria-hidden="true"></span>
+      </button>
+      <button class="icon-btn" aria-label="Shopping bag" id="bagBtn">
+        <span class="icon-bag" aria-hidden="true"></span>
+        <span class="bag-count" id="bagCount">0</span>
+      </button>
+      <button class="icon-btn nav-toggle" aria-label="Open menu" id="navToggle">
+        <span class="icon-menu" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__ellipse" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <div class="hero-copy">
+      <p class="eyebrow">NEW SEASON EDIT</p>
+      <h1 class="hero-copy__headline">Beauty, softened<br>back to essentials.</h1>
+      <p class="hero-copy__desc">Clean formulas, quiet packaging, and colour that feels<br>like your skin on its best day.</p>
+      <div class="hero-copy__actions">
+        <button class="btn btn--primary" data-add-to-bag>SHOP NOW</button>
+        <a href="#story" class="btn btn--secondary">DISCOVER MORE</a>
+      </div>
+    </div>
+
+    <div class="arch arch--large">
+      <div class="arch__ellipse"></div>
+      <p class="arch__label">IMAGE</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories" id="shop">
+  <a class="category" href="#" data-filter="skin">
+    <span class="category__circle"></span>
+    <span class="category__label">SKIN</span>
+  </a>
+  <a class="category category--offset" href="#" data-filter="lips">
+    <span class="category__circle"></span>
+    <span class="category__label">LIPS</span>
+  </a>
+  <a class="category" href="#" data-filter="eyes">
+    <span class="category__circle"></span>
+    <span class="category__label">EYES</span>
+  </a>
+  <a class="category category--offset" href="#" data-filter="face">
+    <span class="category__circle"></span>
+    <span class="category__label">FACE</span>
+  </a>
+</section>
+
+<!-- ================= BESTSELLERS ================= -->
+<section class="bestsellers">
+  <div class="bestsellers__heading">
+    <h2>Our Bestsellers</h2>
+    <a href="#" class="view-all">VIEW ALL →</a>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+    <article class="product-card" data-category="lips">
+      <div class="arch arch--medium">
+        <div class="arch__ellipse"></div>
+        <p class="arch__label">IMAGE</p>
+      </div>
+      <p class="product-card__cat">LIP CARE</p>
+      <p class="product-card__name">Silk Tint Lip Oil</p>
+      <p class="product-card__price">$28</p>
+      <button class="product-card__add" data-add-to-bag>ADD TO BAG</button>
+    </article>
+
+    <article class="product-card" data-category="face">
+      <div class="arch arch--medium">
+        <div class="arch__ellipse"></div>
+        <p class="arch__label">IMAGE</p>
+      </div>
+      <p class="product-card__cat">FACE</p>
+      <p class="product-card__name">Dew Drop Blush</p>
+      <p class="product-card__price">$32</p>
+      <button class="product-card__add" data-add-to-bag>ADD TO BAG</button>
+    </article>
+
+    <article class="product-card" data-category="skin">
+      <div class="arch arch--medium">
+        <div class="arch__ellipse"></div>
+        <p class="arch__label">IMAGE</p>
+      </div>
+      <p class="product-card__cat">SKIN</p>
+      <p class="product-card__name">Rosewater Mist</p>
+      <p class="product-card__price">$36</p>
+      <button class="product-card__add" data-add-to-bag>ADD TO BAG</button>
+    </article>
+
+    <article class="product-card" data-category="eyes">
+      <div class="arch arch--medium">
+        <div class="arch__ellipse"></div>
+        <p class="arch__label">IMAGE</p>
+      </div>
+      <p class="product-card__cat">EYES</p>
+      <p class="product-card__name">Soft Focus Liner</p>
+      <p class="product-card__price">$24</p>
+      <button class="product-card__add" data-add-to-bag>ADD TO BAG</button>
+    </article>
+  </div>
+</section>
+
+<!-- ================= STORY BANNER ================= -->
+<section class="story" id="story">
+  <div class="story__inner">
+    <p class="story__quote">&ldquo;We believe good skin days start with honest ingredients &mdash; and a little quiet luxury.&rdquo;</p>
+    <a href="#about" class="btn btn--secondary">DISCOVER MORE</a>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIAL ================= -->
+<section class="testimonial">
+  <p class="testimonial__stars">★ ★ ★ ★ ★</p>
+  <p class="testimonial__quote">&ldquo;The first blush that actually looks like my skin,<br>just better. I haven&rsquo;t reached for anything else since.&rdquo;</p>
+  <p class="testimonial__author">MARIA T. — VERIFIED BUYER</p>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter" id="journal">
+  <h2 class="newsletter__heading">Join the inner circle</h2>
+  <p class="newsletter__sub">Early access to new drops, skincare notes, and 10% off your first order.</p>
+
+  <form class="newsletter__form" id="newsletterForm">
+    <input type="email" required placeholder="Enter your email" aria-label="Email address" class="newsletter__input" id="newsletterEmail">
+    <button type="submit" class="btn btn--dark">ADD TO BAG</button>
+  </form>
+  <p class="newsletter__feedback" id="newsletterFeedback" aria-live="polite"></p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="contact">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <p class="footer__logo">Bloom &amp; Blush</p>
+      <p class="footer__tagline">Clean, considered beauty<br>crafted for everyday softness.</p>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__col-title">SHOP</p>
+      <a href="#">Skin</a>
+      <a href="#">Lips</a>
+      <a href="#">Eyes</a>
+      <a href="#">Face</a>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__col-title">COMPANY</p>
+      <a href="#">About Us</a>
+      <a href="#">Journal</a>
+      <a href="#">Sustainability</a>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__col-title">SUPPORT</p>
+      <a href="#">Contact</a>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__col-title">STAY IN TOUCH</p>
+      <form class="footer__form" id="footerForm">
+        <input type="email" required placeholder="Your email" aria-label="Email address" class="footer__input" id="footerEmail">
+        <button type="submit" class="footer__send" aria-label="Subscribe">→</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer__divider"></div>
+
+  <div class="footer__bottom">
+    <p>© 2026 Bloom &amp; Blush. All rights reserved.</p>
+    <div class="footer__social">
+      <a href="#">IG</a>
+      <a href="#">PIN</a>
+      <a href="#">TT</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
